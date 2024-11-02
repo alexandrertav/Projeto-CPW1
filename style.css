@@ -75,7 +75,7 @@ body {
      float: left;
      text-align: center; 
      padding: 3% 4%; 
-     background-image:  url("/imagens/banner.png"); 
+     background-image:  url(/imagens/banner.png); 
      background-repeat: no-repeat;
      background-position: center;
      background-size: 100% 200%;
@@ -131,7 +131,8 @@ body {
      color: rgb(117, 77, 29); 
      margin-top: 2%;
     }
-.conteudoc p {margin-top: 6%; 
-    color: rgb(148, 110, 64) 
+.conteudoc p {
+    margin-top: 6%; 
+    color: rgb(148, 110, 64);
     line-height: 1.5em;
  }
