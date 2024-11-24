@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Violão - Escola de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Cabeçalho com logotipo e menu -->
+     <div class="topnav">
+        <div class="logo">
+            <img src="imagens/logo4.png" alt="Logotipo da Escola de Música">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href=cursos.html>Cursos</a></li>
+                <li><a href="#sobre">Sobre a escola</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#dúvidas">Dúvidas Frequentes</a></li>
+                <li><a href="#area-aluno">Área do Aluno</a></li>
+            </ul>
+        </div>
+    </div>
+   
+    <!-- Seção do Curso de Violão -->
+    <section class="curso-detalhado">
+        <div class="conteudo-curso">
+            <img src="imagens/canto.jpg" alt="Curso de Canto">
+            <div class="descricao-curso">
+                <h3>Sobre o Curso</h3>
+                <p>O curso de Canto é ideal para iniciantes e cantores experientes que desejam aprimorar a técnica vocal, a expressividade e
+                     o domínio da voz em diversos estilos musicais. Ao longo do curso, você aprenderá a controlar sua respiração, expandir sua 
+                     tessitura vocal e a interpretar músicas com emoção e técnica. Com a orientação de professores especializados, o aluno será preparado para se 
+                     apresentar com confiança e técnica vocal de alto nível.
+
+                    Com aulas práticas e teóricas, você desenvolverá habilidades que irão além da técnica vocal. 
+                    Trabalhará também sua presença de palco, a capacidade de improvisação e os fundamentos musicais 
+                    necessários para a execução de diversos estilos, desde o popular até o erudito.
+
+                </p>
+                <h4>Conteúdo Programático:</h4>
+                <ul>
+                    <li>Introdução à Técnica Vocal</li>
+                    <li>Desenvolvimento da Técnica Vocal</li>
+                    <li>Interpretação Musical</li>
+                    <li>Preparação para Performance</li>
+                    <li>Canto Avançado</li>
+                </ul>
+                <h4>Horários:</h4>
+                <p>Terças e Quintas - 15h às 16h</p>
+                <h4>Valores:</h4>
+                <p>R$ 200,00 por mês</p>
+                <button onclick="mostrarFormulario()">Inscreva-se Agora</button>
+            </div>
+        </div>
+               <!-- Formulário de Inscrição (inicialmente oculto) -->
+               <div id="formulario-inscricao" style="display:none;">
+                <h3>Inscreva-se no Curso de Violão</h3>
+                <form action="enviar_inscricao.php" method="POST">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+    
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+    
+                    <button type="submit">Enviar Inscrição</button>
+                </form>
+                <button onclick="fecharFormulario()">Fechar</button>
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Escola de Música - Porto Alegre</p>
+    </footer>
+
+</body>
+</html>

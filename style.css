@@ -1,3 +1,378 @@
+<<<<<<< HEAD
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color:  #ddd; /* Cor de fundo do site */
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Barra de navegação superior */
+.topnav {
+    
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f2ece8;
+    padding: 50px
+}
+
+/* Logotipo */
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+/* Menu de navegação */
+.menu {
+
+    display: flex;
+    margin-left: 20px; /* Espaçamento entre o logotipo e o menu */
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 60px;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #222121;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 16px;
+    display: block;
+    text-align: center;
+    transition: color 0.3s;
+    
+    
+}
+.banner img{
+    width: 250px;
+    height: auto;
+}
+
+.banner {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-size: 25px;
+    color: #3f3a3a;
+    font-weight: bold;
+     width: 100%; 
+     float: left;
+     text-align: center; 
+     padding: 3% 4%; 
+  /*   background-image:  url('imagens/banner.png'); 
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100% 200%;
+     background-position-y: center;
+     */
+    }
+
+
+
+.menu ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Rodapé */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo-diferenciais {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #3f3a3a;
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.diferenciais {
+    display: flex;
+    justify-content: flex-start; /* Alinha os cursos à esquerda */
+    flex-wrap: wrap; /* Permite que os cursos ocupem várias linhas em telas menores */
+    gap: 20px; /* Espaçamento entre os cursos */
+    padding: 20px; /* Espaçamento interno da seção */
+}
+
+.diferencial {
+    flex: 1 1 calc(33.33% - 20px); /* Cada curso ocupa 1/3 da largura */
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    overflow: hidden; /* Evita que o conteúdo transborde */
+}
+
+.diferencial img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: auto; /* Mantém proporção da imagem */
+    display: block;
+    border-radius: 7px 7px 0 0; /* Arredonda o topo */
+}
+
+.conteudoc {
+    padding: 15px;
+    text-align: left;
+}
+
+.conteudoc {
+    padding: 15px;
+    text-align: left;
+}
+
+.conteudoc h3 {
+    font-size: 1.5em; 
+    color: rgb(92, 61, 22); 
+    margin: 0 0 10px;
+}
+
+.conteudoc h4 {
+    font-size: 1.2em;
+    color: rgb(117, 77, 29); 
+    margin: 5px 0 15px;
+}
+
+.conteudoc p {
+    color: rgb(148, 110, 64);
+    line-height: 1.5em;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .cursos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centraliza os cards */
+    }
+
+    .curso {
+        max-width: 90%; /* Ocupa quase toda a largura da tela */
+        margin: 10px;
+    }
+}
+/* Título da página de cursos */
+.cursos-titulo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cursos-titulo h1 {
+    font-size: 2.5em;
+    color: #3f3a3a;
+}
+
+.cursos-titulo p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Lista de cursos */
+.cursos-lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.curso {
+    width: 30%; /* Cada curso ocupará 30% da largura da tela */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curso .conteudoc {
+    padding: 20px;
+}
+
+.curso .conteudoc h3 {
+    font-size: 1.5em;
+    color: #3f3a3a;
+}
+
+.curso .conteudoc p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.curso .btn-inscricao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3f3a3a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.curso:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.curso .btn-inscricao:hover {
+    background-color: #555;
+}
+
+/* Estilo para a página do curso específico */
+.curso-detalhado {
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.conteudo-curso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-curso img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.descricao-curso {
+    width: 55%;
+    padding-left: 20px;
+}
+
+h3, h4 {
+    color: #4d4d4d;
+}
+
+button {
+    background-color: #5c3d16;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3e2a14;
+}
+/* Estilo para o formulário */
+#formulario-inscricao {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+}
+
+#formulario-inscricao input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-inscricao button {
+    background-color: #5c3d16;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#formulario-inscricao button:hover {
+    background-color: #3e2a14;
+}
+
+.descricao-curso {
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+    border-radius: 20px; /* Bordas arredondadas, caso queira */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito de destaque */
+
+}
+
+.musica-brasileira {
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+    border-radius: 20px; /* Bordas arredondadas, caso queira */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito de destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor da div */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.musica-brasileira h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.musica-brasileira p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+.musica-brasileira .instrumentos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.musica-brasileira .instrumentos div {
+    text-align: center;
+    width: 45%;
+}
+
+.musica-brasileira .instrumentos img {
+    width: 100%; /* Ajusta a imagem ao tamanho da div */
+    max-width: 200px;
+    border-radius: 8px;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .curso {
+        width: 100%; /* Em telas menores, cada curso ocupa toda a largura */
+    }
+
+}
+=======
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -136,3 +511,4 @@ body {
     color: rgb(148, 110, 64);
     line-height: 1.5em;
  }
+>>>>>>> c73c5152c48c8512d5f4f7fb915c440558538166
