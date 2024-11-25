@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -365,9 +365,21 @@ button:hover {
     max-width: 200px;
     border-radius: 8px;
 }
+
+.mapa {
+    text-align: center;
+}
+
+.mapa iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .curso {
+        width: 100%; /* Em telas menores, cada curso ocupa toda a largura */
+    }
+    .topnav {
         width: 100%; /* Em telas menores, cada curso ocupa toda a largura */
     }
 
