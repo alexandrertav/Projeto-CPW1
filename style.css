@@ -374,6 +374,48 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.banner_subpage {
+    background-color: #858585; /*caso imagem não carrega, há um fundo escuro para possibilitar leitura*/
+    padding-top: 125px;
+    padding-bottom: 125px;
+    font-size: 25px;
+    color: #ffffff;
+    background-blend-mode: multiply;
+    background-position-y: 84%;
+    font-weight: bold;
+    text-align: center; 
+    background-image:  url('imagens/casa.png'); 
+    background-size: cover;
+
+}
+.section_generic{
+    width: 100%;
+}
+/*.img_section{
+    height: auto;
+}
+*/
+.main_subpage{
+    box-sizing: border-box;
+    padding: 4% 1%;
+    border: 2px solid #ff4800;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+/*
+.section_text{
+    width: 50%;
+    padding: 10px 10px;
+}
+
+
+
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .curso {
@@ -381,6 +423,10 @@ button:hover {
     }
     .topnav {
         width: 100%; /* Em telas menores, cada curso ocupa toda a largura */
+    }
+    .main_subpage{
+        flex-direction: column; /* Empilha imagem e texto verticalmente */
+        text-align: center; /* Centraliza texto */
     }
 
 }
