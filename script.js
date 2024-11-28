@@ -27,3 +27,28 @@ fetch('footer.html')
         document.getElementById('footer').innerHTML = data;
     })
     .catch(error => console.error('Error loading footer:', error));
+
+// Carousel functionality
+    let currentSlide = 0; // Start with the first slide
+    const slides = document.querySelectorAll('.carousel_img'); // Get all carousel images
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index); // Show the active slide, hide others
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length; // Go to the next slide, loop back at the end
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Go to the previous slide, loop back at the start
+        showSlide(currentSlide);
+    }
+
+    // Show the first slide initially
+    if (slides.length > 0) {
+        showSlide(currentSlide);
+    }
