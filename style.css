@@ -516,6 +516,10 @@ button:hover {
         flex-direction: column; /* Empilha imagem e texto verticalmente */
         text-align: center; /* Centraliza texto */
     }
+    .section_subpage_color2{
+        flex-direction: column; /* Empilha imagem e texto verticalmente */
+        text-align: center; /* Centraliza texto */
+    }
 
 }
 
