@@ -397,69 +397,108 @@ button:hover {
 .section_subpage{
     box-sizing: border-box; /*width and height include the content, padding and border*/
     padding: 4% 1%;
-    border: 2px solid #ff4800;/*for test*/
+    /*border: 2px solid #ff4800;/*for test*/
     width: 100%;
     /*margin: 0 auto; /*auto left and right, automatically centers the element horizontally within its parents*/
     display: flex; /* turn into flex container*/
     align-items: center; /*flexbox property*/
-    gap: 5%; /*flexbox property*/
+    gap: 2%; /*flexbox property*/
+ 
+}
+.section_subpage_color2{
+    box-sizing: border-box; /*width and height include the content, padding and border*/
+    padding: 4% 1%;
+    /*border: 2px solid #ff4800;/*for test*/
+    width: 100%;
+    /*margin: 0 auto; /*auto left and right, automatically centers the element horizontally within its parents*/
+    display: flex; /* turn into flex container*/
+    align-items: center; /*flexbox property*/
+    gap: 2%; /*flexbox property*/
+    background-color: #f0eaea;
+ 
 }
 .h1_section_subpage{
     text-align: center;
 }
-/*.img_section{
-    height: auto;
+.subpage_image{
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
 }
-*/
-/*
-.section_text{
-    width: 50%;
-    padding: 10px 10px;
+
+
+/*.section_text{
+    text-align: center;
 }*/
 
 
-    .carousel {
-        position: relative;
-        width: 100%; /* Set desired carousel width */
-        max-width: 800px;
-        height: 400px;
-        margin: 0 auto;
-        overflow: hidden; /* Hide images outside the frame */
-        text-align: center;
+.carousel {
+    position: relative;
+    width: 100%; /* Set desired carousel width */
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden; /* Hide images outside the frame */
+    text-align: center;
+}
+
+.carousel_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Hide all images initially */
+    border-radius: 15px;
+}
+
+.carousel_img.active {
+    display: block; /* Show the active image */
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
     }
 
-    .carousel_img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: none; /* Hide all images initially */
-    }
+.carousel_button.prev {
+    left: 0;
+}
 
-    .carousel_img.active {
-        display: block; /* Show the active image */
-    }
-
-    .carousel_button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-    }
-
-    .carousel_button.prev {
-        left: 0;
-    }
-
-    .carousel_button.next {
-        right: 0;
-    }
+.carousel_button.next {
+    right: 0;
+}
 
 #special_image_carousel {
     object-position: center bottom; /* Align horizontally center and vertically bottom */
+}
+
+.gallery {
+    width: 100%;
+    display: flex; /* Display the gallery images in a row */
+    gap: 25px; /* Space between the images */
+    justify-content: center; /* Center the gallery horizontally */
+    flex-wrap: wrap; /* Allow images to wrap onto the next row if needed */
+}
+.gallery_img {
+    width: 100%; /* Four images with equal width and space */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the allocated space */
+}
+.gallery_item{
+    text-align: center;
+    width: 37%;
+}
+.gallery_caption{
+    font-weight: bold;    
 }
 
 
