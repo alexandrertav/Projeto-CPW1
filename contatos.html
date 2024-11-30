@@ -5,8 +5,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="menu"></div>
+
+    <main>
+        <h1>Entre em Contato</h1>
+
+        <section class="contato">
+            <h2>Nossas Informações</h2>
+            <p><i class="fas fa-map-marker-alt"></i> R. Cel. Vicente, 281 - Centro Histórico, Porto Alegre - RS, 90030-041</p>
+            <p><i class="fas fa-phone"></i> (51) 1234-5678</p>
+            <p><i class="fas fa-envelope"></i> escolademusica@gmail.com</p>
+            <p><strong>Horário de Atendimento:</strong> Segunda a sexta, das 9h às 18h</p>
+        </section>
+
+        <section class="formulario">
+            <h2>Envie-nos uma mensagem</h2>
+            <form action="processa_formulario.php" method="post">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email"   
+ placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem"></textarea>   
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="mapa">
+            <h2>Onde nos encontrar:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13817.459247845325!2d-51.2211984!3d-30.0263901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979082a86e831%3A0x9b4615117c97cf33!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Rio%20Grande%20do%20Sul%20-%20Campus%20Porto%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1732973326409!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>   
+
+
+    <div id="footer"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Contatos - Escola de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
      
-    <!-- Placeholder for the menu -->
+    <!-- Placeholder for the menu ->
     <div id="menu"></div>
 
      <header>
@@ -29,10 +75,10 @@
         </section>
     </main>
 
-    <!-- Placeholder for the footer -->
+    <!-- Placeholder for the footer ->
     <div id="footer"></div>
 
-    <!-- Script -->
+    <!-- Script ->
     <script src="script.js" defer></script>
         
 </body>
