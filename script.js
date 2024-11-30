@@ -52,3 +52,15 @@ fetch('footer.html')
     if (slides.length > 0) {
         showSlide(currentSlide);
     }
+
+    function rolarDepoimentos(direcao) {
+        const container = document.querySelector('.container-depoimentos');
+        const scrollAmount = 300; // Quantidade de rolagem em pixels
+    
+        if (direcao === 1) {
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        } else {
+            container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        }
+    }
+    

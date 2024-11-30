@@ -103,7 +103,7 @@ body {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-    color: #3f3a3a;
+    color: #333;
     margin-bottom: 40px; /* Espaçamento abaixo do título */
 }
 
@@ -130,7 +130,209 @@ body {
     display: block;
     border-radius: 7px 7px 0 0; /* Arredonda o topo */
 }
+ 
+.alcance-global {
+    /*background-color: #f9f9f9;*/
+    padding: 50px 20px;
+    text-align: center;
+}
 
+.alcance-global h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.dados-alcance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dado {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.dado h3 {
+    font-size: 3em;
+    color: #ff6600;
+    margin: 10px 0;
+}
+
+.dado p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+}
+
+.chamada-acao {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.chamada-acao a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.chamada-acao a:hover {
+    color: #cc5200;
+}
+.depoimentos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.depoimentos-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-depoimentos {
+    display: flex;
+    overflow: hidden; /* Oculta o conteúdo fora da área visível */
+    scroll-behavior: smooth; /* Rolagem suave */
+    width: 80%; /* Ajusta a largura visível */
+}
+
+.depoimento {
+    flex: 0 0 300px; /* Cada depoimento ocupa 300px */
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.foto-depoimento {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #ddd;
+}
+
+.avaliacao {
+    font-size: 1.8em;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.comentario {
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.depoimento h4 {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilizando as setas */
+.seta {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.seta.esquerda {
+    left: 10px;
+}
+
+.seta.direita {
+    right: 10px;
+}
+
+.seta:hover {
+    background-color: #555;
+}
+
+.parceiros-apoio {
+   /* background-color: #f1f1f1;*/
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.parceiros-apoio h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.parceiros-apoio p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.logos-parceiros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.parceiro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.parceiro img {
+    max-height: 150px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+.parceiro p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
 .conteudoc {
     padding: 15px;
     text-align: left;
