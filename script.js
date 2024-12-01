@@ -63,4 +63,9 @@ fetch('footer.html')
             container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
         }
     }
+
+//seletor menu
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('show');
+    });
     
