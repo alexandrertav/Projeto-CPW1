@@ -12,10 +12,9 @@ body {
 
 /* Barra de navegação superior */
 .topnav {
-    
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px;
     background-color: #f2ece8;
     padding: 50px
 }
@@ -32,24 +31,24 @@ body {
 
 /* Menu de navegação */
 .menu {
-
     display: flex;
-    margin-left: 20px; /* Espaçamento entre o logotipo e o menu */
+    flex-grow: 1;
 }
 
 .menu ul {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 60px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.menu ul li {
+/*.menu ul li {
     margin: 0 15px;
-}
+}*/
 
 .menu ul li a {
-    color: #222121;
+    color: #333;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -57,20 +56,18 @@ body {
     display: block;
     text-align: center;
     transition: color 0.3s;
-    
-    
 }
+
 .banner img{
     width: 250px;
     height: auto;
 }
 
-.banner {
-    
+.banner {  
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: oblique;
     font-size: 25px;
-    color: #3f3a3a;
+    color: #333;
     font-weight: bold;
      width: 100%; 
      float: left;
@@ -84,8 +81,6 @@ body {
      */
     }
 
-
-
 .menu ul li a:hover {
     background-color: #ddd;
     color: black;
@@ -97,6 +92,7 @@ body {
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
+    margin-top: 25px;
 }
 
 .titulo-diferenciais {
@@ -167,7 +163,7 @@ body {
 
 .dado p {
     font-size: 1.2em;
-    color: #555;
+    color: #333;
     margin: 0;
 }
 
@@ -242,7 +238,7 @@ body {
 
 .comentario {
     font-size: 1.1em;
-    color: #555;
+    color: #333;
     font-style: italic;
     margin: 10px 0;
 }
@@ -282,7 +278,7 @@ body {
 }
 
 .seta:hover {
-    background-color: #555;
+    background-color: #333;
 }
 
 .parceiros-apoio {
@@ -299,7 +295,7 @@ body {
 
 .parceiros-apoio p {
     font-size: 1.2em;
-    color: #555;
+    color: #333;
     margin-bottom: 40px;
 }
 
@@ -330,7 +326,7 @@ body {
 
 .parceiro p {
     font-size: 1em;
-    color: #555;
+    color: #333;
     margin: 0;
 }
 .conteudoc {
@@ -345,18 +341,18 @@ body {
 
 .conteudoc h3 {
     font-size: 1.5em; 
-    color: rgb(92, 61, 22); 
+    color: #333;
     margin: 0 0 10px;
 }
 
 .conteudoc h4 {
-    font-size: 1.2em;
-    color: rgb(117, 77, 29); 
+    font-size: 1em;
+    color: #333;
     margin: 5px 0 15px;
 }
 
 .conteudoc p {
-    color: rgb(148, 110, 64);
+    color: #333;
     line-height: 1.5em;
     margin: 0;
 }
@@ -381,12 +377,11 @@ body {
 
 .cursos-titulo h1 {
     font-size: 2.5em;
-    color: #3f3a3a;
 }
 
 .cursos-titulo p {
     font-size: 1.2em;
-    color: #555;
+    color: #333;
 }
 
 /* Lista de cursos */
@@ -419,12 +414,12 @@ body {
 
 .curso .conteudoc h3 {
     font-size: 1.5em;
-    color: #3f3a3a;
+    color: #333;
 }
 
 .curso .conteudoc p {
     font-size: 1em;
-    color: #555;
+    color: #333;
     margin-top: 10px;
 }
 
@@ -432,7 +427,7 @@ body {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #3f3a3a;
+    background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -445,7 +440,7 @@ body {
 }
 
 .curso .btn-inscricao:hover {
-    background-color: #555;
+    background-color: #ff6600;
 }
 
 /* Estilo para a página do curso específico */
@@ -502,7 +497,7 @@ body {
 
 .item-certificacao p {
     font-size: 1.2em;
-    color: #555;
+    color: #333;
     margin: 0;
 }
 .diferenciais-certificado {
@@ -550,17 +545,20 @@ body {
 
 .texto-diferencial-certificado h4 {
     font-size: 1.2em;
-    color: #222;
+    color: #333;
     margin-bottom: 5px;
 }
 
 .texto-diferencial-certificado p {
     font-size: 0.95em;
-    color: #555;
+    color: #333;
     line-height: 1.4;
 }
 
 @media (max-width: 768px) {
+    .diferenciais {
+        flex-direction: column; /* Alinha os artigos verticalmente */
+    }
     .diferencial {
         flex-direction: column;
         text-align: center;
@@ -619,13 +617,13 @@ body {
 
 .texto-recurso h3 {
     font-size: 1.5em;
-    color: #222;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .texto-recurso p {
     font-size: 1em;
-    color: #555;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -636,11 +634,11 @@ body {
 }
 
 h3, h4 {
-    color: #4d4d4d;
+    color: #333;
 }
 
 button {
-    background-color: #5c3d16;
+    background-color: #333;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -650,7 +648,7 @@ button {
 }
 
 button:hover {
-    background-color: #3e2a14;
+    background-color: #333;
 }
 /* Estilo para o formulário */
 #formulario-inscricao {
@@ -671,7 +669,7 @@ button:hover {
 }
 
 #formulario-inscricao button {
-    background-color: #5c3d16;
+    background-color: #333;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -681,7 +679,7 @@ button:hover {
 }
 
 #formulario-inscricao button:hover {
-    background-color: #3e2a14;
+    background-color: #333;
 }
 
 .descricao-curso {
@@ -735,6 +733,7 @@ button:hover {
 
 .mapa {
     text-align: center;
+    margin-top: 50px;
 }
 
 .mapa iframe {
@@ -748,8 +747,8 @@ button:hover {
 
 .banner_subpage {
     background-color: #858585; /*caso imagem não carrega, há um fundo escuro para possibilitar leitura*/
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding-top: 110px;
+    padding-bottom: 110px;
     font-size: 25px;
     color: #ffffff;
     background-blend-mode: multiply;
@@ -770,6 +769,9 @@ button:hover {
     display: flex; /* turn into flex container*/
     align-items: center; /*flexbox property*/
     gap: 2%; /*flexbox property*/
+    line-height: 1.5em;
+    font-size: 1em;
+    color: #333;
  
 }
 .section_subpage_color2{
@@ -781,11 +783,14 @@ button:hover {
     display: flex; /* turn into flex container*/
     align-items: center; /*flexbox property*/
     gap: 2%; /*flexbox property*/
-    background-color: #f0eaea;
+    background-color: #f2f2f2;;
+    line-height: 1.5em;
+    font-size: 1em;
  
 }
 .h1_section_subpage{
     text-align: center;
+    color: #333;
 }
 .subpage_image{
     box-sizing: border-box;
@@ -793,10 +798,14 @@ button:hover {
     max-height: 400px;
     max-width: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 7px;
 
 }
+.h4_subpage{
+    text-align: center;
+    color: #333;
 
+}
 
 /*.section_text{
     text-align: center;
@@ -818,7 +827,7 @@ button:hover {
     height: 100%;
     object-fit: cover;
     display: none; /* Hide all images initially */
-    border-radius: 15px;
+    border-radius: 7px;
 }
 
 .carousel_img.active {
@@ -862,7 +871,7 @@ button:hover {
 }
 .gallery_item{
     text-align: center;
-    width: 37%;
+    width: 45%;
 }
 .gallery_caption{
     font-weight: bold;    
@@ -876,9 +885,6 @@ button:hover {
     .curso {
         width: 100%; /* Em telas menores, cada curso ocupa toda a largura */
     }
-    .topnav {
-        width: 100%; /* Em telas menores, cada curso ocupa toda a largura */
-    }
     .section_subpage{
         flex-direction: column; /* Empilha imagem e texto verticalmente */
         text-align: center; /* Centraliza texto */
@@ -887,6 +893,7 @@ button:hover {
         flex-direction: column; /* Empilha imagem e texto verticalmente */
         text-align: center; /* Centraliza texto */
     }
+    
 
 }
 /* Estilização do formulário */
@@ -896,7 +903,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .formulario input,
@@ -905,7 +912,7 @@ button:hover {
     padding: 15px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 7px;
     box-sizing: border-box;
 }
 
@@ -914,7 +921,7 @@ button:hover {
     color: white;
     padding: 15px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
 }
 
@@ -930,10 +937,63 @@ button:hover {
 .contato {
     background-color: #f2f2f2; /* Cor de fundo da seção de contato */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    margin: 0 auto;
+    margin: 15px auto;
     
-  }
+}
+.banner_subpage_contato {
+    background-color: #858585; /*caso imagem não carrega, há um fundo escuro para possibilitar leitura*/
+    padding-top: 110px;
+    padding-bottom: 110px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: #ffffff;
+    background-blend-mode: multiply;
+    background-position-y: 84%;
+    font-weight: bold;
+    text-align: center; 
+    background-image:  url('imagens/telefone.jpg'); 
+    background-size: cover;
+
+}
+.banner_subpage_cursos {
+    background-color: #a09f9f; /*caso imagem não carrega, há um fundo escuro para possibilitar leitura*/
+    padding-top: 110px;
+    padding-bottom: 110px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: #ffffff;
+    background-blend-mode: multiply;
+    background-position-y: 84%;
+    font-weight: bold;
+    text-align: center; 
+    background-image:  url('imagens/violao_nylon.jpg'); 
+    background-size: cover;
+
+}
+.banner_index {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.video_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.banner_content {
+    position: relative; /* Garante que o texto esteja acima do vídeo */
+    z-index: 1;
+    font-size: 25px;
+    font-weight: bold;
+}
   
